@@ -10,9 +10,11 @@ Documentation:
  - Fix everything in the `docs/` folder to match reality.
  - Don't update `README.md` with minor code fixes.
  - When moving around md files also fix the links in them and links to them across all others.
- - Prefer storing notes and documentation as markdown (``.md``).
+ - Prefer storing notes and documentation as markdown (`.md`).
  - Update docs every time you update something significant across files.
  - Write extensive code comments in the code itself.
+ - API documentation is using Swagger, its descriptions should be clear for data consumers who don't have access to codebase.
+ - Every feature needs to have comprehensive up-to-date documentation near it.
 
 Debugging:
  - Write enough comments so you can deduce what was a requirement in the future and not walk in circles.
@@ -34,8 +36,8 @@ Style:
  - Start sentences at new lines in docs for cleaner git diffs.
  - Clean stuff up if you can: fix typos, make lexics more correct in English.
  - Write insightful code comments.
- - Do not break indentation.
- - Do not mix tabs and spaces.
+ - Do not break code indentation.
+ - Do not mix tabs and spaces in code.
  - Format the code nicely and consistently.
  - Do not replace URLs with non-existing ones.
  - If a file with code grows longer than 500 lines, refactor it into two or move some parts into already created libraries.
@@ -46,11 +48,13 @@ Java:
  - Just ignoring exceptions is not the best fix, handle them properly.
 
 SQL:
- - prefer indexed operators when dealing with jsonb ( `tags @> '{"key": "value"}` instead of `tags ->> 'key' = 'value'` ).
+ - Prefer indexed SQL operators when dealing with jsonb ( `tags @> '{"key": "value"}` instead of `tags ->> 'key' = 'value'` ).
  - SQL is lowercase, PostGIS functions follow their spelling from the manual (`st_segmentize` -> `ST_Segmentize`).
- - values in layers should be absolute as much as possible: store "birthday" or "construction date" instead of "age".
+ - Values in databases and layers should be absolute as much as possible: store "birthday" or "construction date" instead of "age".
  - SQL files should to be idempotent: drop table if exists; add some comments to make people grasp quereies faster.
+ - Create both "up' and "down/rollback" migration when creating new migrations.
  - Format queries in a way so it's easy to copy them out of the codebase and debug standalone.
+ - Do not rewrite old migrations, not for style changes, not for logic changes, always create new migrations for any changes in DB
 
 Make:
  - Makefile: If you need intermediate result from other target, split it into two and depend on the intermediate result.
@@ -82,7 +86,9 @@ Testing:
  - Use `make precommit` to run the checks. This sorts files, verifies Makefile tabs and compiles all Python code via `scripts/check_python.sh`.
  - To run the pipeline in testing offline mode, launch `TEST_MODE=1 PYTHONPATH=. make -B -j all` and check if everything works as intended.
  - For any fix you are implementing try to add test so that it won't repeat in the future.
+ - Code test coverage is measured by codecov. Write useful tests to increase it and check key requirements to hold.
 
 Pull requests:
  - Use Conventional Commits convention when formatting the pull request and commits, e.g. `type(scope): TICKETNUMBER title ...`. Skip ticket number if not provided. Field: Public Id.
+ - Branch names should match branch name recorded by Fibery if provided (e.g. "21648-switch-page-after-login-to-map").
  - Keep Fibery ticket, Sentry ticket or other context relevant URL in pull request description.
