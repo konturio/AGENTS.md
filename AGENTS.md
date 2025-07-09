@@ -82,3 +82,4 @@ Testing:
 
 Pull requests:
  - Use Conventional Commits convention when formatting the pull request and commits, e.g. `type(scope): TICKETNUMBER title ...`. Skip ticket number if not provided. Field: Public Id.
+ - Keep Fibery ticket, Sentry ticket or other context relevant URL in pull request description.
