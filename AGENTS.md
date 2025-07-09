@@ -74,6 +74,9 @@ AI:
  - Use system prompts where needed.
  - Colloquial "vectors" are to be called "embeddings" in codebase.
 
+CI:
+ - The project is using Github Actions. Make sure its configuration is kept up-to-date.
+ 
 Testing:
  - Github Actions is used as CI. Update it as necessary.
  - Use `make precommit` to run the checks. This sorts files, verifies Makefile tabs and compiles all Python code via `scripts/check_python.sh`.
