@@ -69,6 +69,9 @@ Python:
  - Write comments for each logical block.
  - Write docstrings, they will get used for call graph and generated documentation.
 
+Front End:
+ - If Reatom v2 is used, upgrade it to v3.
+
 k8s:
  - When changing something in the charts, bump chart version to trigger deployment too.
 
