@@ -90,6 +90,7 @@ Testing:
  - To run the pipeline in testing offline mode, launch `TEST_MODE=1 PYTHONPATH=. make -B -j all` and check if everything works as intended.
  - For any fix you are implementing try to add test so that it won't repeat in the future.
  - Code test coverage is measured by codecov. Write useful tests to increase it and check key requirements to hold.
+ - Always add a custom assertion message when writing assertions in unit tests, including as much context as possible. Incorporate input data and relevant test details so it's immediately clear what is being verified and why it might fail.
 
 Pull requests:
  - Use Conventional Commits convention when formatting the pull request and commits, e.g. `type(scope): TICKETNUMBER title ...`. Skip ticket number if not provided. Field: Public Id.
