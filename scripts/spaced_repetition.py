@@ -1,5 +1,3 @@
-import os
-import re
 from pathlib import Path
 
 SOURCE_FILE = Path('AGENTS.md')
@@ -11,7 +9,7 @@ RAW_FILE.write_text(original_text)
 # parse headers and items from RAW_FILE
 lines = original_text.splitlines()
 if not lines:
-    raise SystemExit('AGENTS.md is empty')
+    raise ValueError('AGENTS.md expected to contain data but is empty')
 first_line = lines[0]
 
 items = []
@@ -34,7 +32,8 @@ if not items:
     items = [line.strip() for line in lines if line.strip()]
 
 # trigram similarity
-def trigrams(s):
+def trigrams(s: str) -> set[str]:
+    s = s.lower()
     return {s[i:i+3] for i in range(len(s) - 2)} if len(s) >= 3 else {s}
 
 def trigram_similarity(a, b):
