@@ -1,57 +1,73 @@
 # List every repo that needs the rules
-konturio/disaster-ninja-fe:
-  - AGENTS.md
-konturio/insights-llm-api:
-  - AGENTS.md
-konturio/geocint:
-  - AGENTS.md
-konturio/ui:
-  - AGENTS.md
+# Ops
 konturio/disaster-ninja-cd:
-  - AGENTS.md
-konturio/user-profile-api:
   - AGENTS.md
 konturio/k8s-harlem:
   - AGENTS.md
-konturio/event-api:
-  - AGENTS.md
-konturio/front-facing-api-tests:
-  - AGENTS.md
-konturio/disaster-ninja-be:
-  - AGENTS.md
-konturio/layers-db:
-  - AGENTS.md
-konturio/insights-api:
-  - AGENTS.md
 konturio/puppetmaster2022:
-  - AGENTS.md
-konturio/make-profiler:
-  - AGENTS.md
-konturio/event-preview-image-generator:
-  - AGENTS.md
-konturio/geocint-openstreetmap:
-  - AGENTS.md
-konturio/fibery-tools:
-  - AGENTS.md
-konturio/layers-api:
-  - AGENTS.md
-konturio/live-sensors-app:
-  - AGENTS.md
-konturio/oam-mosaic-map:
-  - AGENTS.md
-konturio/geocint-runner:
-  - AGENTS.md
-konturio/insights-db:
   - AGENTS.md
 konturio/k8s-utils:
   - AGENTS.md
-konturio/event-api-tests:
-  - AGENTS.md
+
+# Docs
 konturio/platform-architecture:
+  - AGENTS.md
+
+# FE
+konturio/disaster-ninja-fe:
+  - AGENTS.md
+konturio/ui:
+  - AGENTS.md
+
+# Mobile
+konturio/live-sensors-app:
+  - AGENTS.md
+
+# BE
+konturio/disaster-ninja-be:
+  - AGENTS.md
+konturio/user-profile-api:
+  - AGENTS.md
+konturio/front-facing-api-tests:
+  - AGENTS.md
+
+# Insights
+konturio/insights-api:
+  - AGENTS.md
+konturio/insights-llm-api:
+  - AGENTS.md
+konturio/insights-db:
   - AGENTS.md
 konturio/insights-api-autotests:
   - AGENTS.md
+
+konturio/event-preview-image-generator:
+  - AGENTS.md
+
+# Layers
+konturio/layers-db:
+  - AGENTS.md
+konturio/layers-api:
+  - AGENTS.md
+konturio/oam-mosaic-map:
+  - AGENTS.md
+
+# Disasters
+konturio/event-api:
+  - AGENTS.md
+konturio/event-api-tests:
+  - AGENTS.md
+
+# Data
+konturio/geocint:
+  - AGENTS.md
+konturio/make-profiler:
+  - AGENTS.md
+konturio/geocint-runner:
+  - AGENTS.md
 konturio/geocint-mapaction:
+  - AGENTS.md
+konturio/geocint-openstreetmap:
   - AGENTS.md
 konturio/isochrone-api:
   - AGENTS.md
