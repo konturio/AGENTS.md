@@ -14,7 +14,7 @@ jobs:
       - name: Fan-out file
         uses: Redocly/repo-file-sync-action@22937a06f5780c30f05b816a003948dcc63052df
         with:
-          GH_PAT: ${{ secrets.CD_GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.AGENTS_GITHUB_TOKEN }}
           BRANCH_PREFIX: repo-sync
           COMMIT_PREFIX: "sync: "
           PR_LABELS: |
