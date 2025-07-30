@@ -4,7 +4,8 @@ SOURCE_FILE = Path('AGENTS.md')
 RAW_FILE = Path('AGENTS.raw.md')
 
 original_text = SOURCE_FILE.read_text()
-RAW_FILE.write_text(original_text)
+if not RAW_FILE.exists():
+    RAW_FILE.write_text(original_text)
 
 lines = original_text.splitlines()
 if not lines:
