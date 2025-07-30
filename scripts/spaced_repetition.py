@@ -1,11 +1,8 @@
 from pathlib import Path
 
-SOURCE_FILE = Path('AGENTS.md')
 RAW_FILE = Path('AGENTS.raw.md')
 
-original_text = SOURCE_FILE.read_text()
-if not RAW_FILE.exists():
-    RAW_FILE.write_text(original_text)
+original_text = RAW_FILE.read_text()
 
 lines = original_text.splitlines()
 if not lines:
