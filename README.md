@@ -6,4 +6,6 @@ When setting up your environment:
 wget https://raw.githubusercontent.com/konturio/AGENTS.md/refs/heads/main/AGENTS.md
 ```
 
-The file is built from the human-edited file. It loosely follows Spaced Repetition tecnhique to make sure that similar ideas are getting scattered around the file and are not getting lost by the AI model at once. 
+The file is built from the human-edited file. It loosely follows Spaced Repetition tecnhique to make sure that similar ideas are getting scattered around the file and are not getting lost by the AI model at once.
+
+See [docs/fan-out-playbook.md](docs/fan-out-playbook.md) for instructions on how this repository syncs `AGENTS.md` to other repositories.
