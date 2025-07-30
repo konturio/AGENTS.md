@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Fan-out file
-        uses: Redocly/repo-file-sync-action@v1
+        uses: Redocly/repo-file-sync-action@22937a06f5780c30f05b816a003948dcc63052df
         with:
           GH_PAT: ${{ secrets.CD_GITHUB_TOKEN }}
           BRANCH_PREFIX: repo-sync
