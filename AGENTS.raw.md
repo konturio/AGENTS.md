@@ -72,6 +72,7 @@ Python:
 Front End:
  - If Reatom v2 is used, upgrade it to v3.
  - Every spot that uses external library has to be covered at least once in tests so it's easy to merge dependabot version bump PRs.
+ - New code and its business logic should be covered by tests based on adjusted requirements.
 
 k8s:
  - When changing something in the charts, bump chart version to trigger deployment too.
