@@ -2,72 +2,99 @@
 # Ops
 konturio/disaster-ninja-cd:
   - AGENTS.md
+  - LICENSE
 konturio/k8s-harlem:
   - AGENTS.md
+  - LICENSE
 konturio/puppetmaster2022:
   - AGENTS.md
+  - LICENSE
 konturio/k8s-utils:
   - AGENTS.md
+  - LICENSE
 
 # Docs
 konturio/platform-architecture:
   - AGENTS.md
+  - LICENSE
 
 # FE
 konturio/disaster-ninja-fe:
   - AGENTS.md
+  - LICENSE
 konturio/ui:
   - AGENTS.md
+  - LICENSE
 
 # Mobile
 konturio/live-sensors-app:
   - AGENTS.md
+  - LICENSE
 
 # BE
 konturio/disaster-ninja-be:
   - AGENTS.md
+  - LICENSE
 konturio/user-profile-api:
   - AGENTS.md
+  - LICENSE
 konturio/front-facing-api-tests:
   - AGENTS.md
+  - LICENSE
 
 # Insights
 konturio/insights-api:
   - AGENTS.md
+  - LICENSE
 konturio/insights-llm-api:
   - AGENTS.md
+  - LICENSE
 konturio/insights-db:
   - AGENTS.md
+  - LICENSE
 konturio/insights-api-autotests:
   - AGENTS.md
+  - LICENSE
 
 konturio/event-preview-image-generator:
   - AGENTS.md
+  - LICENSE
 
 # Layers
 konturio/layers-db:
   - AGENTS.md
+  - LICENSE
 konturio/layers-api:
   - AGENTS.md
+  - LICENSE
 konturio/oam-mosaic-map:
   - AGENTS.md
+  - LICENSE
 
 # Disasters
 konturio/event-api:
   - AGENTS.md
+  - LICENSE
 konturio/event-api-tests:
   - AGENTS.md
+  - LICENSE
 
 # Data
 konturio/geocint:
   - AGENTS.md
+  - LICENSE
 konturio/make-profiler:
   - AGENTS.md
+  - LICENSE
 konturio/geocint-runner:
   - AGENTS.md
+  - LICENSE
 konturio/geocint-mapaction:
   - AGENTS.md
+  - LICENSE
 konturio/geocint-openstreetmap:
   - AGENTS.md
+  - LICENSE
 konturio/isochrone-api:
   - AGENTS.md
+  - LICENSE
